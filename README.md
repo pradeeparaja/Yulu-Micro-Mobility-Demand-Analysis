@@ -1,50 +1,78 @@
-# Yulu-Micro-Mobility-Demand-Analysis
-
-## Overview of Yulu
-Yulu is a leading micro-mobility service provider in India, offering shared electric cycles to tackle traffic congestion and provide safe, affordable, and convenient commuting solutions. Yulu zones are strategically placed at various key locations to facilitate smooth first and last-mile connectivity.
-
-## Context:
-Yulu, a company providing shared electric cycles in India, has observed a decline in its revenues. To address this issue, Yulu aims to identify the factors influencing the demand for its electric cycles and understand how these factors predict and explain the demand.
-
-_**Key Goals**:_
-
-Identify Influential Variables: Determine which factors significantly impact the demand for Yulu's shared electric cycles.
-
-**Predict Demand**: Assess how well these variables can predict future demand for the service.
-
-**Explain Demand Trends**: Understand the extent to which these variables explain the changes in demand.
-
-_**Potential Factors to Explore:**_
-
-**Weather Conditions**: Temperature, rainfall, and seasonality.
-
-**Economic Indicators**: Consumer spending, inflation rates, and employment levels.
-
-**Demographics**: Population density, age distribution, and urbanization rates.
-
-**Competition**: Presence and activity of competing services.
-
-**Service Accessibility**: Number of available cycles, coverage area, and service reliability.
-
-**Pricing and Promotions**: Cost per ride, subscription plans, and promotional offers.
-
-**User Preferences**: Customer satisfaction, ride frequency, and preferences for electric cycles over other transport modes.
-
-**Policy and Regulations**: Government policies on electric vehicles and urban transport regulations.
-
-_**Analytical Approach**_:
-
-**Data Collection**: Gather historical data on the identified factors and Yulu's usage patterns.
-
-**Statistical Analysis**: Use regression models and other statistical techniques to analyze the relationship between these variables and demand.
-
-**Model Evaluation**: Evaluate the predictive power and explanatory strength of the models to determine the most significant factors.
+                                                                                            #**🚴‍♂️ Bike Sharing Demand Analysis**
 
 
-_**Expected Outcomes:**_
+###**📊 Project Overview**
 
-**Actionable Insights**: Identification of key variables influencing demand, providing Yulu with insights to make strategic decisions.
+This project dives deep into the dynamics of a bike-sharing system by exploring how factors like weather, seasons, holidays, and working days impact the demand for bikes. Through statistical analysis and visualizations, we uncover key insights and trends that help us understand the driving forces behind bike rentals.
 
-**Improved Forecasting:** Enhanced ability to predict future demand based on the identified factors.
+###**🛠️ Tools & Libraries**
 
-**Strategic Recommendations:** Recommendations for operational, marketing, and strategic adjustments to boost demand and revenue.
+**Pandas**: Data manipulation & cleaning
+**Seaborn** & Matplotlib: Data visualization
+**Scipy**: Statistical hypothesis testing
+
+###**💡 Problem Statement**
+The goal is to explore the dataset, identify relationships, detect patterns, and test hypotheses regarding how external factors influence bike-sharing demand. We specifically aim to:
+
+- Examine the distribution of bike rentals across time and conditions.
+- Detect any significant differences in bike demand based on working days, weather conditions, and seasons.
+- Perform hypothesis testing to validate findings and derive actionable insights.
+  
+###**📂 Dataset**
+The dataset consists of 10,886 observations and includes the following key features:
+
+datetime: Timestamp of the bike rental.
+season: The season during which the rental occurred (Spring, Summer, Fall, Winter).
+holiday: Whether the day was a holiday (Yes/No).
+workingday: Whether it was a working day (Yes/No).
+weather: Weather conditions (Clear, Mist, Light snow/rain).
+temp: Recorded temperature (°C).
+atemp: "Feels like" temperature (°C).
+humidity: Humidity levels (%).
+windspeed: Wind speed (km/h).
+casual: Number of casual users (non-registered).
+registered: Number of registered users.
+count: Total number of bike rentals.
+
+###**🔍 Key Analyses & Insights**
+**Data Cleaning:**
+
+Converted date-time to a proper format and categorized season, holiday, workingday, and weather.
+No missing or duplicated data points.
+
+**Exploratory Data Analysis:**
+
+Visualized the distribution of numerical features like temperature, humidity, and bike rentals.
+Analyzed categorical variables such as season and weather with bar charts and pie charts to understand trends.
+
+**Outlier Detection:**
+
+Used the IQR method to detect and clip outliers in variables like humidity, windspeed, and bike rental counts.
+
+**Correlation Analysis:**
+
+A heatmap was generated to assess the correlation between features like temperature, humidity, and the total number of bike rentals.
+
+###**🔬 Hypothesis Testing**
+**Weekday vs. Weekend Rentals:**
+
+A t-test showed no significant difference in bike rental counts between weekdays and weekends.
+
+**Weather Conditions & Bike Demand:**
+
+Kruskal-Wallis test revealed a significant difference in bike rentals across different weather conditions.
+
+**Seasons & Bike Demand:**
+
+Kruskal-Wallis test confirmed that demand significantly varies across different seasons.
+
+**Weather vs. Seasons:**
+
+A Chi-Square test indicated that weather conditions significantly differ across seasons.
+
+###**📈 Conclusion**
+From the analysis, it's evident that seasons and weather conditions greatly influence the demand for bike rentals, while no major difference was found between weekdays and weekends. The findings provide valuable insights for improving bike-sharing system efficiency, ensuring better bike availability, and optimizing resources based on external conditions.
+
+###**🔗 Next Steps**
+Model the relationship between bike demand and external factors using machine learning.
+Further analyze the influence of time-related features like hour of the day or day of the week.
