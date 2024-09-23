@@ -1,11 +1,11 @@
-                                                                                            # **🚴‍♂️ Bike Sharing Demand Analysis**
+# **🚴‍♂️ Bike Sharing Demand Analysis**
 
 
-###**📊 Project Overview**
+### **📊 Project Overview**
 
 This project dives deep into the dynamics of a bike-sharing system by exploring how factors like weather, seasons, holidays, and working days impact the demand for bikes. Through statistical analysis and visualizations, we uncover key insights and trends that help us understand the driving forces behind bike rentals.
 
-###**🛠️ Tools & Libraries**
+### 🛠️ Tools & Libraries
 
 **Pandas**: Data manipulation & cleaning
 **Seaborn** & Matplotlib: Data visualization
