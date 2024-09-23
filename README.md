@@ -5,20 +5,20 @@
 
 This project dives deep into the dynamics of a bike-sharing system by exploring how factors like weather, seasons, holidays, and working days impact the demand for bikes. Through statistical analysis and visualizations, we uncover key insights and trends that help us understand the driving forces behind bike rentals.
 
-### 🛠️ Tools & Libraries
+### **🛠️ Tools & Libraries**
 
 **Pandas**: Data manipulation & cleaning
 **Seaborn** & Matplotlib: Data visualization
 **Scipy**: Statistical hypothesis testing
 
-###**💡 Problem Statement**
+### **💡 Problem Statement**
 The goal is to explore the dataset, identify relationships, detect patterns, and test hypotheses regarding how external factors influence bike-sharing demand. We specifically aim to:
 
 - Examine the distribution of bike rentals across time and conditions.
 - Detect any significant differences in bike demand based on working days, weather conditions, and seasons.
 - Perform hypothesis testing to validate findings and derive actionable insights.
   
-###**📂 Dataset**
+### **📂 Dataset**
 The dataset consists of 10,886 observations and includes the following key features:
 
 datetime: Timestamp of the bike rental.
@@ -34,7 +34,7 @@ casual: Number of casual users (non-registered).
 registered: Number of registered users.
 count: Total number of bike rentals.
 
-###**🔍 Key Analyses & Insights**
+### **🔍 Key Analyses & Insights**
 **Data Cleaning:**
 
 Converted date-time to a proper format and categorized season, holiday, workingday, and weather.
@@ -53,7 +53,7 @@ Used the IQR method to detect and clip outliers in variables like humidity, wind
 
 A heatmap was generated to assess the correlation between features like temperature, humidity, and the total number of bike rentals.
 
-###**🔬 Hypothesis Testing**
+### **🔬 Hypothesis Testing**
 **Weekday vs. Weekend Rentals:**
 
 A t-test showed no significant difference in bike rental counts between weekdays and weekends.
@@ -70,9 +70,9 @@ Kruskal-Wallis test confirmed that demand significantly varies across different 
 
 A Chi-Square test indicated that weather conditions significantly differ across seasons.
 
-###**📈 Conclusion**
+### **📈 Conclusion**
 From the analysis, it's evident that seasons and weather conditions greatly influence the demand for bike rentals, while no major difference was found between weekdays and weekends. The findings provide valuable insights for improving bike-sharing system efficiency, ensuring better bike availability, and optimizing resources based on external conditions.
 
-###**🔗 Next Steps**
+### **🔗 Next Steps**
 Model the relationship between bike demand and external factors using machine learning.
 Further analyze the influence of time-related features like hour of the day or day of the week.
